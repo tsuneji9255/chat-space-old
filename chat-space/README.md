@@ -4,22 +4,20 @@
 - ruby 2.5.1p57
 - rails 5.0.7.2
 
-
 ### System dependencies(システムの依存関係)
 
 ### Configuration(設定)
 
 ### Database creation(データベース作成)
-
 ## usersテーブル
 |Column|Type|Options|
 |------|----|-------|
-|user_name|string|null: false, unique: true, add_index :users|
-|email|string|null: false, unique: true, add_index :users|
-|password|string|null: false, add_index :users|
+|name     |string|null: false, unique: true, add_index :users|
+|mail     |string|null: false, unique: true, add_index :users|
+|password |string|null: false, add_index :users              |
 
 ### Association
-- has_many :groups, through:members
+- has_many :groups, through :members
 - has_many :members
 - has_many :messages
 
@@ -30,7 +28,7 @@
 |group_name|string|null: false|
 
 ### Association
-- has_many :users, through:members
+- has_many :users, through :members
 - has_many :members
 - has_many :messages
 
@@ -38,7 +36,7 @@
 ## membersテーブル
 |Column|Type|Options|
 |------|----|-------|
-|user_id|references :user|foreign_key: true|
+|user_id |references :user |foreign_key: true|
 |group_id|references :group|foreign_key: true|
 
 ### Association
@@ -49,9 +47,9 @@
 ## messagesテーブル
 |Column|Type|Options|
 |------|----|-------|
-|body|text|
-|image|string|
-|user_id|references :user|foreign_key: true|
+|body    |text             | 
+|image   |string           |
+|user_id |references :user |foreign_key: true|
 |group_id|references :group|foreign_key: true|
 
 ### Association
