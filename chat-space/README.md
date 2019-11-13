@@ -11,7 +11,7 @@
 |password |string|null: false, add_index :users                  |
 
 ### Association
-- has_many :groups, through: :members
+- has_many :groups, through :members
 - has_many :members
 - has_many :messages
 
@@ -19,10 +19,10 @@
 ## groupsテーブル
 |Column|Type|Options|
 |------|----|-------|
-|group_name|string|null: false, uniqueness: true, add_index :groups|
+|group_name|string|null: false|
 
 ### Association
-- has_many :users, through: :members
+- has_many :users, through :members
 - has_many :members
 - has_many :messages
 
