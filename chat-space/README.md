@@ -13,7 +13,7 @@
 |Column|Type|Options|
 |------|----|-------|
 |name     |string|null: false, uniqueness: true, add_index :users|
-|mail     |string|null: false, uniqueness: true, add_index :users|
+|email    |string|null: false, uniqueness: true, add_index :users|
 |password |string|null: false, add_index :users                  |
 
 ### Association
