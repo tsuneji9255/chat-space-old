@@ -1,14 +1,8 @@
-# README(説明書)
+# README
 
-### Ruby version(Rubyバージョン)
-- ruby 2.5.1p57
-- rails 5.0.7.2
 
-### System dependencies(システムの依存関係)
+### データベースの設計
 
-### Configuration(設定)
-
-### Database creation(データベース作成)
 ## usersテーブル
 |Column|Type|Options|
 |------|----|-------|
@@ -56,13 +50,3 @@
 - belongs_to :user
 - belongs_to :group
 
-
-### Database initialization(データベースの初期化)
-
-### How to run the test suite(テストスイートの実行方法)
-
-### Services (job queues, cache servers, search engines, etc.)(サービス（ジョブキュー、キャッシュサーバー、検索エンジンなど）)
-
-### Deployment instructions(展開手順)
-
-### ...
